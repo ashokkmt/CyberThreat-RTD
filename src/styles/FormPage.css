@@ -1,0 +1,125 @@
+.form-main-containter {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-sub-container {
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.form-sub-cont button {
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #97dbff;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-sub-cont button:hover {
+    transform: translateY(-2px);
+}
+
+.form-sub-cont button:active {
+    background-color: #40bcff;
+    transform: scale(0.99);
+}
+
+.form-sub-cont {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.name-section {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-input {
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+}
+
+
+.output-pop {
+    display: none;
+}
+
+
+.show-output {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.out-card {
+    width: 40%;
+    height: 50%;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #0b0b0b, #000000);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0px 0px 12px -3px #4f4fa7;
+}
+
+.heading-pop {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-pop img {
+    width: 42px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.out-card p {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0 .5rem 0 0;
+}
+
+.back-btn {
+    filter: invert(1);
+    width: 40px;
+    height: 35px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.back-btn:hover {
+    transform: scale(1.2);
+}
+
+.back-btn:active {
+    transform: scale(0.98);
+}
