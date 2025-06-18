@@ -28,7 +28,8 @@ export default function FormPage() {
     console.log(data);
 
     try {
-      const res = await axios.get("https://cyberthreatbackend.onrender.com//api/detect", data)
+      const res = await axios.post("https://cyberthreatbackend.onrender.com/api/detect2", data)
+      // const res = await axios.post("http://127.0.0.1:5000/api/detect2", data)
 
       console.log(res);
       setpopup(true);
